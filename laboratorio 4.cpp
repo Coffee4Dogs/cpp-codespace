@@ -10,6 +10,10 @@ int main() {
     //Declarar Queue/Cola
         queue<string> libros; 
 
+    //Informacion del queue.
+        std::cout << "Cual es el tamaño? =>"<< libros.size() << '\n';       //Tamaño Queue.
+        std::cout << "Mi queue esta vacio? =>"<< libros.empty() << '\n';    //Esta Vacio?
+
     //Agregar Elementos a la cola o queue:
         libros.push("El Señor de los Anillos");     
         libros.push("Harry Potter");
@@ -18,7 +22,11 @@ int main() {
         libros.push("Padre Rico Padre Pobre");
         libros.push("La Biblia");
 
+    //Informacion del queue.
+        std::cout << "Cual es el tamaño? =>"<< libros.size() << '\n';       //Tamaño Queue.
+        std::cout << "Mi queue esta vacio? =>"<< libros.empty() << '\n';    //Esta Vacio?
 
+    
 
 
 
