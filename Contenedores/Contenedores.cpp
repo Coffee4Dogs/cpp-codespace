@@ -122,15 +122,23 @@ int main() {
 	// ver el contenido del mapa
 	cout << "Recorriendo mNotas " << endl;
 	for (iterNotas = mNotas.begin(); iterNotas != mNotas.end(); iterNotas++ ){
-		cout << (*iterNotas).first << " : " << (*iterNotas).second << endl;
+		cout << (*iterNotas).first << " : " << (*iterNotas).second << endl;    
 	}
 
 	// ver una de las notas del mapa    
 	
+    std::cout << "Nota de Ana: "<< mNotas.at("Ana") << '\n';
+    std::cout << "Permiso de False: " << mPermisos.at(0) << '\n';
+
 	// cambiar un valor del mapa
- 
+    mNotas["Mario"] = 55.7;
+    mNotas["Ana"] = 36.4;
+
 	// ver nuevamente el contenido del mapa
- 
+    cout << "Recorriendo mNotas " << endl;
+    for (iterNotas = mNotas.begin(); iterNotas != mNotas.end(); iterNotas++ ){
+		cout << (*iterNotas).first << " : " << (*iterNotas).second << endl;    
+	}
 
 	/* Pila */
 	cout << "Uso de la pila" << endl;
