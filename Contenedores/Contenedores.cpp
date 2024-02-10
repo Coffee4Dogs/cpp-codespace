@@ -143,14 +143,27 @@ int main() {
 	/* Pila */
 	cout << "Uso de la pila" << endl;
     stack<int> sRegistros;
+    
+    
 	
 	// ingresar algunos elementos a la pila
+    sRegistros.push(67);
+    sRegistros.push(80);
+    sRegistros.push(90);
+    sRegistros.push(10);
+    sRegistros.push(77);
+    sRegistros.push(99);
 
 	// ver el tama;o de la pila
     cout << "Tamano de la pila " << endl; 
+    std::cout << "El tamaño del stack o pila es: " << sRegistros.size() << '\n';
 
-	// acceder al 5o elemento de la pila
-	
+
+	// .pop() pasar al siguiente elemento
+    sRegistros.pop();
+    sRegistros.pop();
+
+
 	// sacar 2 elementos de la pila
  
 	// ver el nuevo tama;o de la pila

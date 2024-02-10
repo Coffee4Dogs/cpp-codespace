@@ -26,7 +26,17 @@ int main() {
         std::cout << "Cual es el tamaño? =>"<< libros.size() << '\n';       //Tamaño Queue.
         std::cout << "Mi queue esta vacio? =>"<< libros.empty() << '\n';    //Esta Vacio?
 
-    
+        
+        
+    std::cout << "Queue/Cola Contiene: " << '\n';
+    while(!libros.empty()){
+        std::cout << "\t - "<<libros.front() << std::endl;
+        libros.pop();
+    }
+    std::cout << '\n';
+        
+
+        
 
 
 
